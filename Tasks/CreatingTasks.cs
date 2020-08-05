@@ -21,7 +21,7 @@ namespace Tasks
             int i = 1000;
             while (i-- > 0)
             {
-                Console.Write(s.ToString());
+                Console.Write(s.ToString()); 
             }
         }
 
