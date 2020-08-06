@@ -7,6 +7,14 @@ namespace Tasks
 {
     internal class CreatingTasks
     {
+
+        public static void MainCall()
+        {
+            CreateAndStartSimpleTasks();
+            TasksWithReturnValues();
+            TasksWithState();
+        }
+
         public static void Write(char c)
         {
             int i = 1000;

@@ -8,7 +8,11 @@ namespace Tasks
 {
     internal class WaitingTasks
     {
-        public void WaitingTasksMethod()
+        public static void MainCall()
+        {
+            WaitingTasksMethod();
+        }
+        public static void WaitingTasksMethod()
         {
             var cts = new CancellationTokenSource();
             cts.CancelAfter(TimeSpan.FromSeconds(3));
