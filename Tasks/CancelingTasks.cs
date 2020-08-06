@@ -8,6 +8,15 @@ namespace Tasks
 {
     internal class CancelingTasks
     {
+
+        public static void MainCall()
+        {
+            WaitingForTimeToPass();
+            CompositeCancelationToken();
+            MonitoringCancelation();
+            CancelableTasks();
+        }
+
         private static void WaitingForTimeToPass()
         {
             // we've already seen the classic Thread.Sleep
